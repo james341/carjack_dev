@@ -123,7 +123,6 @@ end
 
 -- Dave Miller
 -- Folder: garrysmod/sound/catjacktimetwo/davecarjack/
--- Files : davecarjack.ogg, davesnewcar.ogg, timetogofarawalk.ogg, trywalkingolds.ogg
 AN_CJ_RegisterJobFX("Dave Miller", {
     base_path = "catjacktimetwo/davecarjack/",
     carjack_success = {
@@ -132,29 +131,24 @@ AN_CJ_RegisterJobFX("Dave Miller", {
         "timetogofarawalk.ogg",
         "trywalkingolds.ogg"
     },
-    -- window_break = { "davecarjack.ogg", "trywalkingolds.ogg" },
     volume = 1.0,
     pitch  = 100,
 })
 
 -- Thief (TEAM_BADTHIEFS)
 -- Folder: garrysmod/sound/catjacktimetwo/maincarjack/
--- Files : ionlywanthecar.ogg, maincarjacksound.ogg
 AN_CJ_RegisterJobFX("Thief", {
     base_path = "catjacktimetwo/maincarjack/",
     carjack_success = {
         "ionlywanthecar.ogg",
         "maincarjacksound.ogg",
     },
-    -- window_break = { "ionlywanthecar.ogg", "maincarjacksound.ogg" },
     volume = 1.0,
     pitch  = 100,
 })
 
 -- Henry Miller (unique window-break set)
 -- Folder: garrysmod/sound/catjacktimetwo/henreycarjack/
--- Files : cari8singoodhands.ogg, givehenreythecar.ogg, handitover.ogg,
---         henreywantsjustjusthercar.ogg, henreywantyoutomoveit.ogg
 AN_CJ_RegisterJobFX("Henry Miller", {
     base_path = "catjacktimetwo/henreycarjack/",
     carjack_success = {
@@ -176,8 +170,6 @@ AN_CJ_RegisterJobFX("Henry Miller", {
 
 -- Phone Guy
 -- Folder: garrysmod/sound/catjacktimetwo/phoneguycarjack/
--- Files : insurancepal.ogg, hellowuhhellow.ogg, lolxd.ogg,
---         phoneguysnewcar.ogg, phonehuyquirky.ogg, whatareyoudoing.ogg
 AN_CJ_RegisterJobFX("Phone Guy", {
     base_path = "catjacktimetwo/phoneguycarjack/",
     carjack_success = {
@@ -193,6 +185,32 @@ AN_CJ_RegisterJobFX("Phone Guy", {
         "whatareyoudoing.ogg",
         "insurancepal.ogg"
     },
+    volume = 1.0,
+    pitch  = 100,
+})
+
+-- Old Sport
+-- Folder: garrysmod/sound/catjacktimetwo/oldsportcarjack/
+-- Files from your screenshot:
+--   ahomicide.ogg
+--   getyourselfajob.ogg
+--   goworkatfreddys.ogg
+--   jackkennedycommandeeringyourcar.ogg
+--   suchaheightfromgod.ogg
+AN_CJ_RegisterJobFX("Old Sport", {
+    base_path = "catjacktimetwo/oldsportcarjack/",
+    carjack_success = {
+        "ahomicide.ogg",
+        "getyourselfajob.ogg",
+        "goworkatfreddys.ogg",
+        "jackkennedycommandeeringyourcar.ogg",
+        "suchaheightfromgod.ogg",
+    },
+    -- Optional: uncomment if you want separate window-break lines for Old Sport
+    -- window_break = {
+    --     "getyourselfajob.ogg",
+    --     "goworkatfreddys.ogg",
+    -- },
     volume = 1.0,
     pitch  = 100,
 })
