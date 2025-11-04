@@ -122,7 +122,6 @@ end
 --============================================================
 
 -- Dave Miller
--- Folder: garrysmod/sound/catjacktimetwo/davecarjack/
 AN_CJ_RegisterJobFX("Dave Miller", {
     base_path = "catjacktimetwo/davecarjack/",
     carjack_success = {
@@ -136,7 +135,6 @@ AN_CJ_RegisterJobFX("Dave Miller", {
 })
 
 -- Thief (TEAM_BADTHIEFS)
--- Folder: garrysmod/sound/catjacktimetwo/maincarjack/
 AN_CJ_RegisterJobFX("Thief", {
     base_path = "catjacktimetwo/maincarjack/",
     carjack_success = {
@@ -147,8 +145,7 @@ AN_CJ_RegisterJobFX("Thief", {
     pitch  = 100,
 })
 
--- Henry Miller (unique window-break set)
--- Folder: garrysmod/sound/catjacktimetwo/henreycarjack/
+-- Henry Miller
 AN_CJ_RegisterJobFX("Henry Miller", {
     base_path = "catjacktimetwo/henreycarjack/",
     carjack_success = {
@@ -169,7 +166,6 @@ AN_CJ_RegisterJobFX("Henry Miller", {
 })
 
 -- Phone Guy
--- Folder: garrysmod/sound/catjacktimetwo/phoneguycarjack/
 AN_CJ_RegisterJobFX("Phone Guy", {
     base_path = "catjacktimetwo/phoneguycarjack/",
     carjack_success = {
@@ -190,13 +186,6 @@ AN_CJ_RegisterJobFX("Phone Guy", {
 })
 
 -- Old Sport
--- Folder: garrysmod/sound/catjacktimetwo/oldsportcarjack/
--- Files from your screenshot:
---   ahomicide.ogg
---   getyourselfajob.ogg
---   goworkatfreddys.ogg
---   jackkennedycommandeeringyourcar.ogg
---   suchaheightfromgod.ogg
 AN_CJ_RegisterJobFX("Old Sport", {
     base_path = "catjacktimetwo/oldsportcarjack/",
     carjack_success = {
@@ -206,17 +195,26 @@ AN_CJ_RegisterJobFX("Old Sport", {
         "jackkennedycommandeeringyourcar.ogg",
         "suchaheightfromgod.ogg",
     },
-    -- Optional: uncomment if you want separate window-break lines for Old Sport
-    -- window_break = {
-    --     "getyourselfajob.ogg",
-    --     "goworkatfreddys.ogg",
-    -- },
+    volume = 1.0,
+    pitch  = 100,
+})
+
+-- Shreck 
+AN_CJ_RegisterJobFX("Shreck", {
+    base_path = "catjacktimetwo/shrekcarjack/",
+    carjack_success = {
+        "listentakinthis.ogg",
+        "ogresonions.ogg",
+        "ohhellothere.ogg",
+        "righthandoverkeys.ogg",
+        "shrecksaidgetouttathecarnowogg.ogg", 
+        "thatsmystuffsaidshreck.ogg",
+    },
     volume = 1.0,
     pitch  = 100,
 })
 
 --============================================================
--- Add more jobs by copying one block above and editing:
---  * Job display name (must match team.GetName(ply:Team()))
---  * base_path and .ogg filenames
+-- Copy a block above to add more jobs. The job name MUST match
+-- team.GetName(ply:Team()) for the player doing the carjack.
 --============================================================
