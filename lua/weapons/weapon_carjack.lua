@@ -6,7 +6,7 @@
 if SERVER then AddCSLuaFile() end
 
 SWEP.PrintName      = "Carjacker"
-SWEP.Author         = "Alliance Networks + ChatGPT"
+SWEP.Author         = "Authoritarian Nation"
 SWEP.Instructions   = "Primary (LMB): Hold to carjack an OCCUPIED vehicle.\nReload (R): Break the window of a LOCKED vehicle (short hold)."
 SWEP.Category     = "DarkRP (Weapon)"   -- ← this decides where it shows in Q-menu
 SWEP.Spawnable      = true
